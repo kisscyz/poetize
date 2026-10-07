@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>秋日私语 · 诗语</title>
+<meta name="description" content="秋日私语：关于安静的代码与用心的设计。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="article">
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-cn">诗语</span>
+      <span><span class="logo-en">POETIZE</span></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" data-nav="index">首页</a>
+      <a href="gallery.html" data-nav="gallery">漫步</a>
+      <a href="article.html" data-nav="article">文章</a>
+      <a href="timeline.html" data-nav="timeline">诗集</a>
+      <a href="timeline.html" data-nav="about">关于</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="搜索">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <span class="avatar" title="博主">清</span>
+      <button class="icon-btn hamburger" id="hamburger" aria-label="菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="search-bar" id="searchBar">
+    <div class="search-inner">
+      <input id="searchInput" type="text" placeholder="搜索诗句、游记、随笔…">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="article-wrap">
+    <article class="article card">
+      <h1>秋日私语：关于安静的代码与用心的设计</h1>
+      <div class="meta"><span>发布于 2024年10月5日</span><span>·</span><span>8 min 阅读</span><span>·</span><span>代码中的诗意</span><span>·</span><span>文 / 林清予</span></div>
+      <div class="tags"><a class="tag" href="timeline.html">#文学</a><a class="tag" href="timeline.html">#代码</a><a class="tag" href="timeline.html">#随想</a></div>
+
+      <div class="article-body">
+        <p>写代码时会有一种安静的节奏——不只在诗句里，也在我们留下的代码行间。秋天提醒我们慢下来，不只重构系统，也重构注意力。</p>
+
+        <blockquote>“好的代码像好的诗，是写给人读的。”<br>—— 页边注</blockquote>
+
+        <h2 id="s1">一 · 安静的节奏</h2>
+        <p>慢下来。有意图的设计生于克制。编辑即是关怀——删去不必要的，为意义留白。如秋天落叶，我们抖落杂芜，显露结构，留下真正重要的东西。</p>
+
+        <h2 id="s2">二 · 代码即诗行</h2>
+        <p>代码是写给机器的散文，但阅读它的永远是人。最好的代码读起来像一首小诗：清晰、简洁，有节奏，有停顿。</p>
+
+        <h2 id="s3">三 · 解析寂静</h2>
+        <p>看这个小工具——它修剪噪声，只留下会呼吸的行。函数很小，很克制，删去空行，只保留那些有呼吸的行。正如我们编辑一首诗，写作即为思想留出空间。</p>
+
+        <h2 id="s4">四 · 沉思</h2>
+        <p>我们设计不只为输出，也为后来读它的人。安静的代码是一种善意。同样的，安静的写作也为思想留出空间。</p>
+      </div>
+    </article>
+
+    <aside>
+      <div class="toc-card card">
+        <h4>📖 &nbsp;目录</h4>
+        <nav class="toc">
+          <a href="#s1" class="active">引言</a>
+          <a href="#s1">一 · 安静的节奏</a>
+          <a href="#s2">二 · 代码即诗行</a>
+          <a href="#s3">三 · 解析寂静</a>
+          <a href="#s4">四 · 沉思</a>
+        </nav>
+        <div class="info-card">
+          <h4>ⓘ &nbsp;文章信息</h4>
+          <p>字数：1,240</p>
+          <p>阅读时长：8 min</p>
+          <p>更新于：2024年10月5日</p>
+          <p style="margin-top:10px;">主题</p>
+          <p><span class="tag">文学</span><span class="tag">设计</span></p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer class="site-footer card wrap">
+  <nav class="fnav">
+    <a href="index.html">首页</a><a href="gallery.html">漫步</a><a href="article.html">文章</a>
+    <a href="timeline.html">诗集</a><a href="timeline.html">关于</a>
+  </nav>
+  <p>诗语 · 安静思考的札记 · © <span id="year"></span> POETIZE</p>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>

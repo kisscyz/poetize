@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>时间线 · 诗语</title>
+<meta name="description" content="一条纵向的时光线，拾起每一段文字与思绪。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="timeline">
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-cn">诗语</span>
+      <span><span class="logo-en">POETIZE</span></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" data-nav="index">首页</a>
+      <a href="gallery.html" data-nav="gallery">漫步</a>
+      <a href="article.html" data-nav="article">文章</a>
+      <a href="timeline.html" data-nav="timeline">诗集</a>
+      <a href="timeline.html" data-nav="about">关于</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="搜索">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <span class="avatar" title="博主">清</span>
+      <button class="icon-btn hamburger" id="hamburger" aria-label="菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="search-bar" id="searchBar">
+    <div class="search-inner">
+      <input id="searchInput" type="text" placeholder="搜索诗句、游记、随笔…">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="page-head">
+    <img src="images/plum-branch.png" alt="梅" style="width:150px;margin:0 auto 6px;">
+    <h1>时光 · 诗行</h1>
+    <p class="sub">一条纵向的时光线，拾起每一段文字与思绪 · 56 篇随笔 · 自 2024 年起</p>
+  </div>
+
+  <div class="timeline">
+    <div class="tl-row right">
+      <span class="tl-dot"></span>
+      <span class="tl-date">2024年10月15日</span>
+      <article class="tl-card card">
+        <span class="tl-tag">#秋日书房</span>
+        <h3>秋日书房 · 午后读《山居笔记》</h3>
+        <p>窗外桂花已落，案头新焙的茶还温热。翻至卷三，笔者记中山雨后云起，心忽而静。读书如与古人对坐，一盏一页皆是时光。</p>
+        <div class="tl-meta"><span>♡ 128阅读</span><span>◐ 6评</span><span>✦ 24喜欢</span></div>
+      </article>
+    </div>
+
+    <div class="tl-row">
+      <span class="tl-dot"></span>
+      <span class="tl-date">2024年09月28日</span>
+      <article class="tl-card card">
+        <span class="tl-tag">#雨巷拾句</span>
+        <h3>雨巷拾句 · 青石巷里的诗</h3>
+        <p>夜雨敲窗，巷深灯微。想起最爱的那首诗，于是也写下几行：青苔覆阶，千山是未寄出的信。</p>
+        <div class="tl-meta"><span>♡ 98阅读</span><span>◐ 4评</span><span>✦ 18喜欢</span></div>
+      </article>
+    </div>
+
+    <div class="tl-row right">
+      <span class="tl-dot"></span>
+      <span class="tl-date">2024年09月28日</span>
+      <article class="tl-card card">
+        <span class="tl-tag">#初夏茶事</span>
+        <h3>初夏茶事 · 龙井新茶一泡</h3>
+        <p>新茶入口，清甜回甘。午后与友人围炉庭院，谈字画，读闲书。茶烟袅袅，时光亦如茶汤，渐渐浓却而绵长。</p>
+        <div class="tl-meta"><span>♡ 156阅读</span><span>◐ 9评</span><span>✦ 31喜欢</span></div>
+      </article>
+    </div>
+
+    <div class="tl-row">
+      <span class="tl-dot"></span>
+      <span class="tl-date">2024年08月16日</span>
+      <article class="tl-card card">
+        <span class="tl-tag">#古籍笔记</span>
+        <h3>古籍笔记 · 《归园田居》重读</h3>
+        <p>陶公言“少无适俗韵，性本爱丘山”。重读此篇，忽觉今人亦困于尘网。遂记数笔，以自勉。</p>
+        <div class="tl-meta"><span>♡ 112阅读</span><span>◐ 5评</span><span>✦ 22喜欢</span></div>
+      </article>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer card wrap">
+  <nav class="fnav">
+    <a href="index.html">首页</a><a href="gallery.html">漫步</a><a href="article.html">文章</a>
+    <a href="timeline.html">诗集</a><a href="timeline.html">关于</a>
+  </nav>
+  <p>© 2024 诗语 POETIZE · 以诗为笺，以时光为卷</p>
+  <p style="margin-top:6px;">RSS · 关于 · 友链</p>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>

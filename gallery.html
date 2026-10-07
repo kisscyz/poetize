@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POETIZE · Travel Photo Wall</title>
+<meta name="description" content="Fragments of places, stitched in time — a quiet collection of wanderings.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="gallery">
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-cn">诗语</span>
+      <span><span class="logo-en">POETIZE</span></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" data-nav="index">首页</a>
+      <a href="gallery.html" data-nav="gallery">漫步</a>
+      <a href="article.html" data-nav="article">文章</a>
+      <a href="timeline.html" data-nav="timeline">诗集</a>
+      <a href="timeline.html" data-nav="about">关于</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <span class="avatar" title="Mori">M</span>
+      <button class="icon-btn hamburger" id="hamburger" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="search-bar" id="searchBar">
+    <div class="search-inner">
+      <input id="searchInput" type="text" placeholder="Search places, notes…">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="page-head">
+    <h1>Photo Wall — Travel Notes</h1>
+    <p class="sub">Fragments of places, stitched in time — a quiet collection of wanderings</p>
+  </div>
+
+  <div class="filter-bar">
+    <div class="filters">
+      <span class="label">Filter:</span>
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="sea">Sea</button>
+      <button class="chip" data-filter="city">City</button>
+      <button class="chip" data-filter="nature">Nature</button>
+      <button class="chip" data-filter="mountains">Mountains</button>
+    </div>
+    <p class="stats-line">12 notes · 8 places · Updated Oct 6, 2024</p>
+  </div>
+
+  <div class="masonry" id="photoWall">
+    <figure class="ph card" data-cat="city">
+      <img loading="lazy" src="images/g-kyoto.jpg" alt="Kyoto">
+      <figcaption class="cap"><b>Kyoto, Japan</b><span>Mar 12, 2024</span><small>Lantern-lit alley after rain, quiet evening</small></figcaption>
+    </figure>
+    <figure class="ph card" data-cat="city">
+      <img loading="lazy" src="images/g-oaxaca.jpg" alt="Oaxaca">
+      <figcaption class="cap"><b>Oaxaca, Mexico</b><span>Apr 19, 2024</span><small>Market morning, spices and ceramics</small></figcaption>
+    </figure>
+    <figure class="ph card" data-cat="nature">
+      <img loading="lazy" src="images/g-bali.jpg" alt="Bali">
+      <figcaption class="cap"><b>Bali, Indonesia</b><span>Jul 14, 2024</span><small>Hidden waterfall near Ubud, mossy stone path</small></figcaption>
+    </figure>
+    <figure class="ph card" data-cat="sea">
+      <img loading="lazy" src="images/g-santorini.jpg" alt="Santorini">
+      <figcaption class="cap"><b>Santorini, Greece</b><span>May 23, 2024</span><small>Sunset over the caldera, warm breeze</small></figcaption>
+    </figure>
+    <figure class="ph card" data-cat="city">
+      <img loading="lazy" src="images/g-lisbon.jpg" alt="Lisbon">
+      <figcaption class="cap"><b>Lisbon, Portugal</b><span>Sep 5, 2023</span><small>Tram 28 climbing through Alfama</small></figcaption>
+    </figure>
+    <figure class="ph card" data-cat="nature">
+      <img loading="lazy" src="images/g-provence.jpg" alt="Provence">
+      <figcaption class="cap"><b>Provence, France</b><span>Jun 8, 2024</span><small>Lavender fields near Valensole under golden hour</small></figcaption>
+    </figure>
+    <figure class="ph card" data-cat="mountains">
+      <img loading="lazy" src="images/g-hokkaido.jpg" alt="Hokkaido">
+      <figcaption class="cap"><b>Hokkaido, Japan</b><span>Jan 30, 2024</span><small>Snowfall at Lake Toya, quiet winter morning</small></figcaption>
+    </figure>
+    <figure class="ph card" data-cat="sea">
+      <img loading="lazy" src="images/g-amalfi.jpg" alt="Amalfi Coast">
+      <figcaption class="cap"><b>Amalfi Coast, Italy</b><span>Oct 4, 2023</span><small>Coastal town at dusk, gentle Mediterranean evening</small></figcaption>
+    </figure>
+  </div>
+</div>
+
+<footer class="site-footer card wrap">
+  <nav class="fnav">
+    <a href="index.html">首页</a><a href="gallery.html">漫步</a><a href="article.html">文章</a>
+    <a href="timeline.html">诗集</a><a href="timeline.html">关于</a>
+  </nav>
+  <p>Made with POETIZE — a quiet place to record your travels · © <span id="year"></span></p>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
