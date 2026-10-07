@@ -57,12 +57,12 @@ h1, h2, h3, .serif { font-family: var(--serif); letter-spacing: 2px; }
 
 /* ---------- 页眉 ---------- */
 .site-header {
-  position: sticky; top: 14px; z-index: 100;
-  max-width: 1180px; margin: 14px auto 0; border-radius: 18px;
+  position: sticky; top: 0; z-index: 100;
+  max-width: none; margin: 0; border-radius: 0;
   background: var(--card);
   -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px);
-  border: 1px solid var(--card-border);
-  box-shadow: var(--shadow-1), var(--shadow-2);
+  border: none; border-bottom: 1px solid var(--card-border);
+  box-shadow: var(--shadow-1);
 }
 .header-inner {
   display: flex; align-items: center; justify-content: space-between;
@@ -120,7 +120,7 @@ h1, h2, h3, .serif { font-family: var(--serif); letter-spacing: 2px; }
 .btn:hover { transform: translateY(-3px); box-shadow: 0 14px 28px rgba(180,112,63,.4); }
 
 /* ---------- 首页 Hero ---------- */
-.hero { position: relative; margin: 30px 0 10px; overflow: hidden; }
+.hero { position: relative; margin: 0 0 10px; overflow: hidden; }
 .hero-bg {
   position: absolute; top: 0; right: 0; bottom: 0; width: 64%;
   -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 22%);
@@ -308,7 +308,7 @@ h1, h2, h3, .serif { font-family: var(--serif); letter-spacing: 2px; }
   }
   .main-nav.open { display: flex; }
   .hamburger { display: grid; }
-  .site-header { top: 8px; }
+  .site-header { top: 0; }
   .masonry { columns: 1; }
   .filter-bar { flex-direction: column; align-items: flex-start; }
   .to-top { right: 16px; bottom: 20px; }
